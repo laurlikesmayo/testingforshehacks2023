@@ -21,9 +21,9 @@ def aesthetic():
 def myform(): 
     return render_template("form.html")
 
-@app.route("/scrollwebsite")
+@app.route("/testwebsite")
 def scrollwebsite() : 
-    return render_template("scrollwebsite.html")
+    return render_template("testing.html")
 
 @app.route("/menews")
 def menews():
