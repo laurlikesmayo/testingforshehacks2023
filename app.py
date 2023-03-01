@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, url_for, redirect
 
 app = Flask(__name__)
 
@@ -27,6 +27,15 @@ def scrollwebsite() :
 @app.route("/menews")
 def menews():
     return render_template("menews.html")
+
+
+@app.route("/form", methods=["GET", "POST"])
+def form():
+    if request.method == "POST":
+        name = request.form.get('name')
+        
+    return render_template("form.html")
+    
 
 if __name__ == "__main__":
     app.run(debug=True)
