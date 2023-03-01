@@ -10,8 +10,7 @@ def hello():
  ##HEAD##
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
 
 @app.route("/aesthetic")
 def aesthetic(): 
@@ -28,4 +27,7 @@ def scrollwebsite() :
 @app.route("/menews")
 def menews():
     return render_template("menews.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
