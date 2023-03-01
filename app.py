@@ -13,3 +13,19 @@ def hello():
 if __name__ == "__main__":
     app.run(debug=True)
 
+@app.route("/aesthetic")
+def aesthetic(): 
+    return render_template("practice.html")
+
+@app.route("/myform")
+def myform(): 
+    return render_template("form.html")
+
+@app.route("/scrollwebsite")
+def scrollwebsite() : 
+    return render_template("scrollwebsite.html")
+
+@app.route("/menews")
+def menews():
+    return render_template("menews.html")
+
