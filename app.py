@@ -10,9 +10,6 @@ def hello():
  ##HEAD##
 
 
-
-
-
 @app.route("/myform")
 def myform(): 
     return render_template("form.html")
@@ -20,8 +17,6 @@ def myform():
 @app.route("/testwebsite")
 def scrollwebsite() : 
     return render_template("testing.html")
-
-
 
 
 @app.route("/form", methods=["GET", "POST"])
