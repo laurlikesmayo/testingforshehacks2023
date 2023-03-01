@@ -12,9 +12,6 @@ def hello():
 
 
 
-@app.route("/aesthetic")
-def aesthetic(): 
-    return render_template("practice.html")
 
 @app.route("/myform")
 def myform(): 
@@ -24,9 +21,7 @@ def myform():
 def scrollwebsite() : 
     return render_template("testing.html")
 
-@app.route("/menews")
-def menews():
-    return render_template("menews.html")
+
 
 
 @app.route("/form", methods=["GET", "POST"])
